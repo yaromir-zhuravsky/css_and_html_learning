@@ -1,0 +1,156 @@
+@import nonestyles.scss
+
+body
+  font-family: Arial
+  height: 100%
+
+.wrapper
+  display: flex
+  flex-direction: column
+  height: 100%
+
+.header
+  background: #445162
+  .header-body
+    padding: 50px
+  .header__row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .hi
+      color: white
+      font-weight: 400
+      text-shadow: 0px 1px 0px rgba(0,0,0,0.3)
+      .title
+        font-size: 60px
+        margin-bottom: 40px
+      .list
+        font-size: 20px
+        line-height: 36px
+        & *:before
+          content: url("images/check_icon_346.png")
+          margin-right: 10px
+      .image_container
+        img
+          height: 214px
+          width: 469px
+
+.content
+  flex: 1 0 auto
+  .what
+    font-size: 16px
+    line-height: 24px
+    font-weight: 400
+    color: #333333
+    padding: 50px 120px 45px 50px
+    background: #ffffff
+    .what__row
+      display: flex
+      justify-content: space-between
+      .what__text
+        width: 650px
+        .text-container
+          .title
+            font-size: 30px
+            margin-bottom: 35px
+          .text .text1
+            margin-bottom: 30px
+  .columns
+    background: #f5f5f5
+    padding: 50px
+    .columns-body
+      line-height: 24px
+      color: #333333
+      .columns__title
+        font-size: 30px
+        line-height: 36px
+        color: #445161
+        text-align: center
+        margin-bottom: 30px
+      .columns__row
+        display: flex
+        flex-wrap: wrap
+        & *
+          flex: 1 0 50%
+        .column
+          display: flex
+          margin-bottom: 20px
+          .image
+            max-width: 200px
+            margin-right: 20px
+          .column__title
+            font-size: 24px
+            line-height: 30px
+            color: #445161
+  .happy
+    padding: 0 100px
+    .happy-body
+      margin-bottom: 50px
+    .happy__title
+      font-size: 30px
+      line-height: 36px
+      color: #445161
+      text-align: center
+      margin: 35px 0 15px 0
+    .happy__row
+      display: flex
+      justify-content: space-between
+
+      & *
+        flex: 0 1 25%
+        display: flex
+        flex-direction: column
+        align-items: center
+        background: #445162
+        border-radius: 5px
+        .will-be-happy
+          font-size: 24px
+          line-height: 30px
+          color: #ffffff
+          padding: 15px 0 15px 0
+          flex: 0 1 auto
+        .what-will-be-happy
+          font-size: 40px
+          line-height: 30px
+          background: white
+          padding: 20px 0 20px 0
+          width: 100%
+          color: #445162
+          border: 2px solid #445162
+          flex: 0 0 auto
+        .happy__text
+          font-size: 14px
+          line-height: 24px
+          color: #ffffff
+          padding: 20px
+          flex-grow: 1
+        .button
+          flex: 0 1 auto
+          margin: 0 20px 20px 20px
+          .happy__button
+            text-align: center
+            background-color: #ffffff
+            font-size: 18px
+            font-weight: 700
+            color: #445161
+            width: 260px
+            padding: 10px 0
+            border-radius: 5px
+.footer
+  justify-self: flex-end
+  background: #f5f5f5
+  .footer__row
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 65px
+    footer
+    .footer__text
+      font-size: 12px
+      line-height: 24px
+      letter-spacing: 0.025em
+      color: #445162
+
+
+
+
