@@ -1,0 +1,47 @@
+html, body
+  height: 100%
+
+body
+  background: grey
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+.card
+  width: 400px
+  height: 200px
+  position: relative
+  transform-style: preserve-3d
+  transition-duration: 0.5s
+  transition-timing-function: ease-out
+
+
+.front, .back
+  height: 100%
+  width: 100%
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+  color: white
+  font-size: 40px
+  font-family: Arial
+  border-radius: 10px
+
+.front
+  background: #bb8c35
+  z-index: 2
+  backface-visibility: hidden
+
+.back
+  z-index: 1
+  background: #33657c
+  backface-visibility: hidden
+  transform: rotateX(180deg)
+
+
+.container
+  perspective: 800px
+  &:hover .card
+    transform: rotatex(180deg)
