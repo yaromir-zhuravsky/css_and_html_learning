@@ -1,0 +1,80 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(grey, #464646);
+}
+
+.cube {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: cube 15s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.front, .right, .back, .left, .bottom, .top {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.front {
+  background: #ffcc00;
+  transform: translateZ(150px);
+}
+
+.right {
+  background: #7cc525;
+  transform-origin: 100% 100%;
+  transform: translateZ(-150px) rotateY(90deg);
+}
+
+.back {
+  background: #953dff;
+  transform: translateZ(-150px) rotateY(180deg);
+}
+
+.left {
+  background: orange;
+  transform-origin: 0% 0%;
+  transform: translateZ(-150px) rotateY(-90deg);
+}
+
+.bottom {
+  background: #ee462e;
+  transform-origin: 50% 100%;
+  transform: translateZ(-150px) rotateX(-90deg);
+}
+
+.top {
+  background: #00b2ff;
+  transform-origin: 50% 0%;
+  transform: translateZ(-150px) rotateX(90deg);
+}
+
+.container {
+  perspective: 1000px;
+}
+
+@keyframes cube {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  33.333% {
+    transform: rotateX(0deg) rotateY(360deg);
+  }
+  66.666% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+  100% {
+    transform: rotateX(720deg) rotateY(720deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
